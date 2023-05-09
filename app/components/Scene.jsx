@@ -10,14 +10,14 @@ Title: Gaming Desktop PC
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
+export function Model({ isMobile }) {
   const { nodes, materials } = useGLTF("/scene-transformed.glb");
   return (
     <group
-      scale={0.75}
-      position={[0, -3.25, -1.5]}
+      scale={isMobile ? 0.5 : 0.75}
+      position={isMobile ? [0, -3, -1.5] : [0, -3.25, -1.5]}
       rotation={[-0.01, -0.2, -0.1]}
-      {...props}
+      // {...props}
       dispose={null}
     >
       <hemisphereLight intensity={0.15} groundColor="black" />
