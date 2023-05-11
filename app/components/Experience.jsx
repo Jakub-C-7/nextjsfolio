@@ -1,5 +1,8 @@
 "use client";
-// import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import {
+  VerticalTimelineElement,
+  VerticalTimeline,
+} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
