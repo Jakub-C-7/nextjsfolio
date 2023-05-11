@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { CanvasLoader } from "../Loader";
+import CanvasLoader from "../Loader";
 // import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Model } from "../Scene";
 
@@ -38,8 +38,8 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      {/* <Suspense fallback={<CanvasLoader />}> */}
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
+        {/* <Suspense> */}
         {/* <Suspense fallback={"Loading!!!"}> */}
         <OrbitControls
           enableZoom={false}

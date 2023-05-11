@@ -14,7 +14,7 @@ export function Model({ isMobile }) {
   const { nodes, materials } = useGLTF("/scene-transformed.glb");
   return (
     <group
-      scale={isMobile ? 0.5 : 0.75}
+      scale={isMobile ? 0.5 : 0.7}
       position={isMobile ? [0, -3, -1.5] : [0, -3.25, -1.5]}
       rotation={[-0.01, -0.2, -0.1]}
       // {...props}
