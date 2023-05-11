@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -34,11 +34,7 @@ const About = () => {
   return (
     <ComponentLayout>
       <>
-        <motion.div
-          variants={textVariant()}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-          id="about"
-        >
+        <motion.div variants={textVariant()} id="about">
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview</h2>
         </motion.div>
